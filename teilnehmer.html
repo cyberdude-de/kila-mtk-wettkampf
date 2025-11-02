@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teilnehmermeldung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Teilnehmermeldung</h1>
+  <form id="teilnehmerForm">
+    <label>Team-Code <input name="teamcode" required /></label>
+    <label>Teilnehmerliste (max. 11)<br>
+      <textarea name="liste" rows="10" placeholder="Nachname[TAB]Vorname[TAB]Jahrgang[TAB]Geschlecht" required></textarea>
+    </label>
+    <label>Helfer 1 <input name="helfer1" /></label>
+    <label>Helfer 2 <input name="helfer2" /></label>
+    <label>Helfer 3 <input name="helfer3" /></label>
+    <label>Verantwortliche Person <input name="verantwortlich" required /></label>
+    <label>Telefon <input name="telefon" required /></label>
+    <label>E-Mail <input name="email" type="email" required /></label>
+    <label><input type="checkbox" name="einwilligung" required />
+      Teilnahmeerklärungen liegen vor.
+    </label>
+    <button type="submit">Absenden</button>
+  </form>
+  <script src="js/submit-to-sheet.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mannschaftsmeldung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mannschaftsmeldung</h1>
+  <form id="teamForm">
+    <label>Verein <input name="verein" required /></label>
+    <label>Altersklasse <select name="altersklasse" required>
+      <option>U8</option><option>U10</option><option>U12</option>
+    </select></label>
+    <label>Teamname <input name="teamname" required /></label>
+    <label>Anzahl Kinder <input name="kinderzahl" type="number" required /></label>
+    <label>Kontaktperson <input name="kontaktperson" required /></label>
+    <label>E-Mail <input name="email" type="email" required /></label>
+    <label><input type="checkbox" name="einwilligung" required />
+      Ich bestätige, dass die Einwilligung der Eltern vorliegt.
+    </label>
+    <button type="submit">Absenden</button>
+  </form>
+  <script src="js/submit-to-sheet.js"></script>
+</body>
+</html>
